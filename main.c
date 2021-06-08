@@ -116,7 +116,7 @@ extern void FPU_enableModule( void );
 	MAP_GPIO_setAsPeripheralModuleFunctionInputPin( GPIO_PORT_P1, GPIO_PIN2 | GPIO_PIN3, GPIO_PRIMARY_MODULE_FUNCTION );
 	MAP_GPIO_setOutputLowOnPin( GPIO_PORT_P1, GPIO_PIN0 );
 	MAP_GPIO_setAsOutputPin( GPIO_PORT_P1, GPIO_PIN0 );
-	/* Selecting P1.4 as output LED	 */
+	/* Selecting P2.0 as output LED	 */
 
 }
 /*-----------------------------------------------------------*/
