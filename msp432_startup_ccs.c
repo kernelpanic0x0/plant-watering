@@ -65,6 +65,7 @@ demo application. */
 extern void vUART_Handler( void );
 extern void vT32_0_Handler( void );
 extern void vT32_1_Handler( void );
+extern void PORT1_IRQHandler(void); //S1 Push button P1.1 interrupt
 
 /* Intrrupt vector table.  Note that the proper constructs must be placed on this to  */
 /* ensure that it ends up at physical address 0x0000.0000 or at the start of          */
@@ -125,7 +126,7 @@ void (* const interruptVectors[])(void) =
     defaultISR,                             /* DMA_INT2 ISR              */
     defaultISR,                             /* DMA_INT1 ISR              */
     defaultISR,                             /* DMA_INT0 ISR              */
-	defaultISR,                             /* PORT1 ISR                 */
+    PORT1_IRQHandler,                       /* PORT1 ISR                 */
     defaultISR,                             /* PORT2 ISR                 */
     defaultISR,                             /* PORT3 ISR                 */
     defaultISR,                             /* PORT4 ISR                 */
