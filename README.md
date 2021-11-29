@@ -1,6 +1,6 @@
-# IOT Simple Garden
+# Plant watering
 
-## This repo is used for TI MSP342P401R IoT project
+## This repo is used for 
 
 **Hardware:**
 * Development Kit (MSP‑EXP432P401R)
